@@ -2,3 +2,4 @@ selenium
 Appium-Python-Client
 pytest
 allure-pytest
+selene==2.0.0b16

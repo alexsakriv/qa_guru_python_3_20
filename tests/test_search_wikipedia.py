@@ -24,7 +24,7 @@ options = UiAutomator2Options().load_capabilities({
 })
 
 
-def test_search_wikipedia():
+def test_search_wikipedia(attach_video):
     driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
     search_element = WebDriverWait(driver, 30).until(
@@ -43,7 +43,7 @@ def test_search_wikipedia():
     driver.quit()
 
 
-def test_search_allure():
+def test_search_allure(attach_video):
     driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
     search_element = WebDriverWait(driver, 30).until(
