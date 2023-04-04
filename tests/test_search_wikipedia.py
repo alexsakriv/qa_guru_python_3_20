@@ -25,7 +25,6 @@ options = UiAutomator2Options().load_capabilities({
 
 
 def test_search_wikipedia():
-
     driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
 
     search_element = WebDriverWait(driver, 30).until(
