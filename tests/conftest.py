@@ -15,7 +15,7 @@ def attach_video():
 
     browser.config.driver = driver
 
-    yield
+    yield browser
 
     attach.add_video(browser)
     browser.quit()
